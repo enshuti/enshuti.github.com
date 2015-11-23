@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+        <!-- TODO: lav en mere restriktiv sikkerhedspolitik når vi ved hvor vi gør af data: -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+	    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="flat-ui/jquery.mobile.flatui.css" type="text/css"/>
+		<link rel="stylesheet" href="fotorama/css/fotorama.css"/>
+		<script src="jqm/jquery-1.11.3.min.js"></script>
+		<script src="fotorama/js/fotorama.js"></script>
+        <script src="js/app.js"></script>
+   		<script src="jqm/jquery.mobile-1.4.5.min.js"></script>
+        <title>TestExpo 2016</title>
+    </head>
+    <body>
+		<div data-role="page" id="home">
+
+			<div data-role="main" class="fotorama"
+                 data-autoplay="true"
+                 data-width="100%"
+                 data-nav="false"
+                 data-fit="cover">
+                <img src="img/frontpage-carousel/testexpo16-frontpage-1.jpg"/>
+				<img src="img/frontpage-carousel/testexpo16-frontpage-4.jpg"/>
+				<img src="img/frontpage-carousel/testexpo16-frontpage-3.jpg"/>
+                <img src="img/frontpage-carousel/testexpo16-frontpage-2.jpg"/>
+            </div>
+
+			<div data-role="footer" data-position="fixed" data-theme="a" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#program" data-icon="calendar">Program</a></li>
+						<li><a href="#sponsorer" data-icon="heart" >Sponsorer</a></li>
+						<li><a href="#evaluering" data-icon="star">Evaluering</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="page" id="program">
+        	<div data-role="panel" id="program_panel">
+                <button id="navpan_btn_digital">Go Digital</button>
+                <button id="navpan_btn_agile">Be Agile</button>
+                <button id="navpan_btn_secure">Stay Secure</button>
+                <button id="navpan_btn_speakers">Talere</button>
+            </div>
+			<div data-role="header" data-position="fixed">
+            	<a href="#program_panel" data-icon="bars" style="height: 12pt"></a>
+            	<h3>Program</h3>
+                <hr>
+            </div>
+			<div data-role="main" class="ui-content" role="heading" id="schedule-main">
+
+				<!--<div id="go_digital_content">
+                	<p>Go Digital</p>
+                </div>
+                <div id="be_agile_content">
+                	<p>Be Agile</p>
+                </div>
+                <div id="stay_secure_content">
+                	<p>Stay Secure</p>
+                </div>
+                <div id="speakers_content">
+                	<p>Talere</p>
+                </div>-->
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="a" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#program" data-icon="calendar" class="ui-btn-active">Program</a></li>
+						<li><a href="#sponsorer" data-icon="heart" >Sponsorer</a></li>
+						<li><a href="#evaluering" data-icon="star">Evaluering</a></li>
+                        <li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="info">
+			<div data-role="header" data-position="fixed"><h3>Info</h3></div>
+
+			<div role="main" class="ui-content">
+				<p>Bella Center er et ultramoderne, state-of-the-art kongres- og messecenter, der er integreret med Nordens største hotel AC Hotel Bella Sky.</p>
+				<p>En unik beliggenhed midt i Ørestaden - med egen Metrostation, Skandinaviens største indkøbscenter, Royal Golf Center og fredede naturarealer lige ved døren, sikrer optimale forhold for enhver type arrangement - kun 10 minutter fra København centrum og 5 min fra Københavns Lufthavn i Kastrup.</p>
+				<p><strong>Kort over Bella Center:</strong><br/>
+					<img src="img/lokation/map.png" style="width: 95%; height: auto;"/></p>
+				<p>&nbsp;</p>
+				<p><strong>Oversigt og parkering</strong><br/>
+					<img src="img/lokation/bellacenterparkering.jpg" style="width: 95%; height: auto;"/></p>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-theme="a" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#program" data-icon="calendar">Program</a></li>
+						<li><a href="#sponsorer" data-icon="heart">Sponsorer</a></li>
+						<li><a href="#evaluering" data-icon="star">Evaluering</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="page" id="evaluering">
+			<div data-role="header" data-position="fixed"><h3>Evaluering</h3></div>
+			
+            <div role="main" class="ui-content"></div>
+
+			<div data-role="footer" data-position="fixed" data-theme="a" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#program" data-icon="calendar">Program</a></li>
+						<li><a href="#sponsorer" data-icon="heart" >Sponsorer</a></li>
+						<li><a href="#evaluering" data-icon="star" class="ui-btn-active">Evaluering</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="page" id="sponsorer">
+			<div data-role="header" data-position="fixed"><h3>Sponsorer</h3></div>
+
+			<div data-role="main" role="heading" class="ui-content" id="sponsors">
+
+			</div>
+
+			<!-- Old ui-content -->
+			<!--<div role="main" class="ui-content">
+				<h3>Guld sponsore</h3>
+                <p>
+					<img src="img/sponsor/microsoft-logo.png" class="sponsor_img"/><br/>
+                	<strong>Om Microsoft</strong><br/>
+                    Hos Microsoft, er vores mission, at hjælpe mennesker og virksomheder i hele verden til at realisere deres fulde potentiale.  Vi vil styrke mennesket ved hjælp af fantastisk software når som helst, hvor som helst og på alle enheder.</p>
+				<p>
+					<strong>Om vores Testværktøj</strong>
+					Visual Studio Test Professional med MSDN integrerer testere, produktchefer og andre interessenter direkte i udviklingsprocessen. Visual Studio Test Professional er tæt integreret med vores Visual Studio Application Lifecycle Management løsning, således at alle interessenter altid er direkte tilknyttet til udviklingsprocessen -  og som sikrer, at dit team forbliver agilt og informeret.
+                </p>
+                <p>
+                	Besøg <a href="javascript:void()" onClick="openExternal('http://www.microsoft.dk');">www.microsoft.dk</a>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                	<img src="img/sponsor/dynatrace-logo.png" class="sponsor_img"/><br/>
+                	<strong>Om Dynatrace</strong><br/>
+                    <a href="javascript:void()" onClick="openExternal('http://www.twitter.com/dynatrace')">
+                    	<img src="img/twitter-logo-300x300.jpg" style="width: 44pt; height: 44pt; float: right"/>
+                    </a>
+                    Dynatrace is the innovator behind the new generation of Application Performance Management. Our passion: helping customers, large and small, see their applications and digital channels through the lens of end users. Over 5,700 organizations use these insights to master complexity, gain operational agility, and grow revenue by delivering amazing user experiences. To read more about Dynatrace's leadership in the APM market, click 
+                    <a href="javascript:void()" onClick="openExternal('http://www.dynatrace.com/en/about-us/leadership.html')">here</a>.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                	<img src="img/sponsor/ca-technologies-logo.jpg" class="sponsor_img"/><br/>
+                    <strong>Om CA Technologies</strong><br/>
+					CA Technologies helps customers succeed in a future where every business—from apparel to energy—is being rewritten by software. From planning to development to management to security, at CA we create software that fuels transformation for companies in the application economy. With CA software at the center of their IT strategy, organizations can leverage the technology that changes the way we live—from the data center to the mobile device. Our software and solutions help our customers thrive in the new application economy by delivering the means to deploy monitor and secure their applications and infrastructure”.<br/>
+                    Besøg <a href="javascript:void()" onClick="openExternal('http://www.ca.com')">www.ca.com</a>.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                	<img src="img/sponsor/tricentis-logo.jpg" class="sponsor_img"/><br/>
+                    <span style="float:right;">
+                    <a href="javascript:void()" onClick="openExternal('http://twitter.com/Tricentis')">
+                    	<img src="img/twitter-logo-300x300.jpg" style="width: 44pt; height: 44pt;"/>
+                    </a>
+                    <a href="javascript:void()" onClick="openExternal('https://www.linkedin.com/company/tricentis-technology-&-consulting-gmbh')">
+                    	<img src="img/LinkedIn_logo.png" style="width: 44pt; height: 44pt;"/>
+                    </a>
+                    <a href="javascript:void()" onClick="openExternal('https://www.facebook.com/TRICENTIS')">
+                    	<img src="img/fb-logo.jpg" style="width: 44pt; height: 44pt;"/>
+                    </a>
+                    </span>
+                    <strong>Om Tricentis</strong><br/>
+					Tricentis provides the leading enterprise software testing solutions for Global 2000 companies to accelerate business innovation. Tricentis’ unique model-based approach to software test automation enables enterprises to achieve unprecedented automation rates while minimizing business-related risks. Tricentis solutions empower organizations to systematically align software testing with business needs, so they can harness technology change while optimizing cost and efficiency. The company’s more than 400 customers include global brands like Allianz, BMW, Deutsche Bank, HBO, Orange, Siemens, Swiss Re, and UBS. Its industry awards include Best in Test 2013. A fast-growing, privately held company, Tricentis has offices in the United States, Austria, Germany, Switzerland, the UK, the Netherlands, Australia, and Singapore. To learn more, visit <a href="javascript:void()" onClick="openExternal('http://www.tricentis.com')">http://www.tricentis.com</a>. 
+                </p>    
+                <p>&nbsp;</p>
+                <h3>Sølv sponsore</h3>
+                <p>
+                	<img src="img/sponsor/hp-logo.jpg" class="sponsor_img"/><br/>
+                    <strong>Om HP</strong><br/>
+					HP skaber nye muligheder med teknologi, der har en meningsfuld og positiv indflydelse på mennesker, virksomheder, myndigheder og måden, vi agerer på privat og på jobbet. Som en af verdens største it- og teknologivirksomheder tilbyder HP omfattende print- og PC-produkter, storage-løsninger, servere og infrastrukturprodukter, der alle bindes sammen af markedsledende software og service-leverancer udført af samarbejdspartnere og HP’s medarbejdere.<br/>
+                    Besøg <a href="#" onClick="openExternal('http://www.hp.dk')">www.hp.dk</a>.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                	<img src="img/sponsor/reqtest-logo.jpg" class="sponsor_img"/><br/>
+                    <a href="javascript:void()" onClick="openExternal('https://twitter.com/ReQtester/')">
+                    	<img src="img/twitter-logo-300x300.jpg" style="width: 44pt; height: 44pt; float: right"/>
+                    </a>
+                    <strong>Om ReQtest</strong><br/>
+                    With ReQtest’s software, you can manage the requirements for your system and keep track of testing and defects. Agile features allow teams to easily work together and plan their work. Today ReQtest is used by more than 10 000 people and excellent usability is one of many advantages that keeps it growing rapidly!</p>
+                <p>We started building ReQtest in 2001. We have always been huge fans of cloud services, so from the very beginning we decided that our test management and bug reporting service would be delivered as SaaS. Being on the cloud allows us to be efficient and extremely scalable, while you as a customer don’t need to think about keeping the system running.<br/>
+                Our customer list includes companies such as Statoil, Skanska, IBM, Amadeus and Schneider.</p>
+                <p>See more on: <a href="#" onClick="openExternal('http://www.reqtest.com')">www.reqtest.com</a>.
+                </p>
+                <p>&nbsp;</p>
+			</div>-->
+			
+			<div data-role="footer" data-position="fixed" data-theme="a" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#program" data-icon="calendar">Program</a></li>
+						<li><a href="#sponsorer" data-icon="heart" class="ui-btn-active">Sponsorer</a></li>
+						<li><a href="#evaluering" data-icon="star" >Evaluering</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+    </body>
+</html>
